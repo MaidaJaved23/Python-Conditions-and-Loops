@@ -418,4 +418,9 @@ These are console-based programs, not graphical applications. Their focus is on 
 
 <div align="center">
 <img src="assets/footer.svg" alt="Built with Python" width="100%">
+       <div align="center">
+
+<p><b>Author:</b> Maida Javed</p>
+
+</div>
 </div>
