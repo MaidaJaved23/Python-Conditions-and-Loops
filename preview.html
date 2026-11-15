@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Python Conditions &amp; Loops Assessment – Preview</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--tx:#0f172a;--mu:#475569;--ac:#4f46e5;--bd:#e2e8f0}
+@media(prefers-color-scheme:dark){:root{--bg:#070b16;--card:#0f172a;--tx:#e2e8f0;--mu:#94a3b8;--ac:#a5b4fc;--bd:#1e293b}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 'Segoe UI',system-ui,Arial,sans-serif}
+img{max-width:100%;height:auto;display:block}
+nav{position:sticky;top:0;z-index:5;display:flex;gap:20px;justify-content:center;flex-wrap:wrap;padding:12px;background:var(--bg);border-bottom:1px solid var(--bd)}
+nav a{color:var(--ac);text-decoration:none;font-weight:600}nav a:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+main{max-width:1100px;margin:0 auto;padding:24px 20px}header,footer{max-width:1200px;margin:0 auto;padding:16px 20px}
+section{margin:56px 0}h2{font-size:28px;margin:0 0 6px}p{color:var(--mu);max-width:70ch}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:16px;overflow-x:auto}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}.grid .card{padding:22px}.grid h3{margin:0 0 6px}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.on{opacity:1;transform:none}
+pre{overflow-x:auto;background:#0b1020;color:#d1fae5;padding:16px;border-radius:12px;font-size:14px}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style><noscript><style>.rv{opacity:1;transform:none}</style></noscript></head><body>
+<header><img src="assets/header.svg" alt="Python Conditions and Loops Assessment"></header>
+<nav><a href="#overview">Overview</a><a href="#task1">Scholarship flow</a><a href="#task2">Pharmacy flow</a><a href="#charts">Charts</a><a href="#er">ER diagram</a><a href="#run">Run it</a></nav>
+<main>
+<section id="overview" class="rv"><h2>Two console apps, one assessment</h2><p>Plain Python with no third-party libraries. Each program validates input, makes decisions, and prints a clear report.</p>
+<div class="grid"><div class="card"><h3>Student Scholarship Eligibility</h3><p>Checks marks, attendance, and family income with <code>if</code>/<code>elif</code>, then lists every unmet requirement.</p></div>
+<div class="card"><h3>Smart Pharmacy Inventory &amp; Sales</h3><p>Loops over medicines, checks stock, totals revenue, and flags items that need restocking.</p></div></div></section>
+<section id="task1" class="rv"><h2>Scholarship decision flow</h2><p>Full scholarship at 90% marks or more; partial from 80% to below 90%. All three requirements must pass.</p><div class="card"><img src="assets/scholarship-flow.svg" alt="Scholarship decision flowchart"></div></section><section id="task2" class="rv"><h2>Pharmacy processing loop</h2><p>One pass through the loop per medicine, with revenue and restock counters updated each time.</p><div class="card"><img src="assets/pharmacy-flow.svg" alt="Pharmacy loop flowchart"></div></section><section id="charts" class="rv"><h2>Sample run charts</h2><p>Revenue and remaining stock from the sample execution.</p><div class="card"><img src="assets/sample-analytics.svg" alt="Sample analytics charts"></div></section><section id="er" class="rv"><h2>Data model</h2><p>A conceptual ER diagram. The programs keep data in memory only.</p><div class="card"><img src="assets/er-diagram.svg" alt="ER diagram"></div></section><section id="run" class="rv"><h2>Run the programs</h2><p>Install Python 3.8 or newer, open a terminal in the project folder, and run either file.</p><pre><code>python student_scholarship_system.py
+python pharmacy_inventory_system.py</code></pre></section>
+</main><footer><img src="assets/footer.svg" alt="Built with Python"></footer>
+<script>const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');o.unobserve(x.target)}}),{threshold:.12});document.querySelectorAll('.rv').forEach(e=>o.observe(e));</script></body></html>

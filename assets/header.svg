@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" width="1600" height="420" role="img" aria-label="Python Conditions and Loops Assessment">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset=".55" stop-color="#1e2a78"/><stop offset="1" stop-color="#6d28d9"/></linearGradient>
+<linearGradient id="ti" x1="0" x2="1"><stop offset="0" stop-color="#7dd3fc"/><stop offset=".5" stop-color="#a5b4fc"/><stop offset="1" stop-color="#f0abfc"/></linearGradient>
+<filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".06"/></pattern>
+<clipPath id="c1"><rect x="90" y="300" width="0" height="40"><animate attributeName="width" values="0;640;640;0" keyTimes="0;.4;.9;1" dur="8s" repeatCount="indefinite"/></rect></clipPath>
+<clipPath id="c2"><rect x="90" y="345" width="0" height="40"><animate attributeName="width" values="0;0;560;560;0" keyTimes="0;.3;.7;.92;1" dur="8s" repeatCount="indefinite"/></rect></clipPath>
+</defs>
+<rect width="1600" height="420" rx="28" fill="url(#bg)"/><rect width="1600" height="420" rx="28" fill="url(#grid)"/>
+<g filter="url(#glow)"><circle cx="300" cy="120" r="120" fill="#38bdf8" opacity=".35"><animate attributeName="cx" values="300;520;300" dur="9s" repeatCount="indefinite"/></circle><circle cx="1300" cy="320" r="150" fill="#d946ef" opacity=".3"><animate attributeName="cx" values="1300;1100;1300" dur="11s" repeatCount="indefinite"/></circle></g>
+<text x="90" y="150" font-family="'Segoe UI',Arial,sans-serif" font-size="78" font-weight="800" fill="url(#ti)">Python Conditions &amp; Loops</text>
+<text x="92" y="205" font-family="'Segoe UI',Arial,sans-serif" font-size="29" fill="#cbd5e1">Student Scholarship Eligibility  +  Smart Pharmacy Inventory &amp; Sales</text>
+<g font-family="'Segoe UI',Arial,sans-serif" font-size="20" font-weight="600" fill="#e2e8f0">
+<rect x="90" y="235" width="170" height="38" rx="19" fill="#fff" fill-opacity=".12"/><text x="175" y="260" text-anchor="middle">if / elif / else</text>
+<rect x="276" y="235" width="170" height="38" rx="19" fill="#fff" fill-opacity=".12"/><text x="361" y="260" text-anchor="middle">for · range()</text>
+<rect x="462" y="235" width="170" height="38" rx="19" fill="#fff" fill-opacity=".12"/><text x="547" y="260" text-anchor="middle">try / except</text></g>
+<g font-family="ui-monospace,Consolas,monospace" font-size="26"><g clip-path="url(#c1)"><text x="90" y="328" fill="#86efac">if marks &gt;= 80 and attendance &gt;= 85:</text></g>
+<g clip-path="url(#c2)"><text x="90" y="373" fill="#fcd34d">for i in range(1, n + 1):</text></g></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -14;0 0" dur="5s" repeatCount="indefinite"/>
+<circle cx="1230" cy="170" r="84" fill="#0f172a" fill-opacity=".55" stroke="url(#ti)" stroke-width="4"/>
+<circle cx="1230" cy="170" r="106" fill="none" stroke="#7dd3fc" stroke-width="2" stroke-dasharray="6 14"><animateTransform attributeName="transform" type="rotate" from="0 1230 170" to="360 1230 170" dur="24s" repeatCount="indefinite"/></circle>
+<polygon points="1230,118 1244,153 1282,156 1253,180 1262,217 1230,197 1198,217 1207,180 1178,156 1216,153" fill="#fde047"/></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 12;0 0" dur="6s" repeatCount="indefinite"/>
+<g transform="rotate(-35 1400 300)"><rect x="1340" y="270" width="120" height="60" rx="30" fill="#f8fafc"/><path d="M1400 270h30a30 30 0 0 1 0 60h-30z" fill="#34d399"/></g></g>
+<g fill="#fff"><circle cx="760" cy="90" r="3"><animate attributeName="opacity" values=".1;1;.1" dur="3s" repeatCount="indefinite"/></circle><circle cx="980" cy="330" r="4"><animate attributeName="opacity" values="1;.1;1" dur="4s" repeatCount="indefinite"/></circle><circle cx="1480" cy="90" r="3"><animate attributeName="opacity" values=".1;1;.1" dur="5s" repeatCount="indefinite"/></circle></g>
+</svg>

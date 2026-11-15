@@ -1,6 +1,14 @@
-# Python Conditions and Loops — Scholarship & Pharmacy Management Systems
+<div align="center">
 
-Two beginner-friendly Python console applications developed for a programming assessment on **conditional statements and loop structures**. The project demonstrates decision-making through a student scholarship scenario and repetition, counters, and accumulators through a pharmacy inventory and sales scenario.
+<img src="assets/header.svg" alt="Python Conditions and Loops Assessment" width="100%">
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white) ![Dependencies](https://img.shields.io/badge/dependencies-none-22c55e) ![Type](https://img.shields.io/badge/app-console-6366f1)
+
+**[▶ Live Preview](preview.html)** · [Task 1](#task-1-student-scholarship-eligibility-system) · [Task 2](#task-2-smart-pharmacy-inventory--sales-management-system) · [ER Diagram](#data-model-er-diagram) · [How to Run](#how-to-run-the-programs)
+
+</div>
+
+A beginner-friendly Python console project containing two separate applications. The first uses conditional statements to evaluate student scholarship eligibility. The second uses a `for` loop to process pharmacy inventory and calculate sales revenue.
 
 ## Repository Name
 
@@ -8,112 +16,337 @@ Two beginner-friendly Python console applications developed for a programming as
 
 ## Project Overview
 
-This assessment contains two separate applications:
+This assessment demonstrates how Python can solve two everyday business problems:
 
-1. **Student Scholarship Eligibility System:** Evaluates a student's scholarship eligibility using academic marks, attendance percentage, and monthly family income.
-2. **Smart Pharmacy Inventory & Sales Management System:** Processes medicine inventory and sales, checks stock availability, calculates revenue, and identifies medicines that need restocking.
+1. **Student Scholarship Eligibility System:** checks a student's marks, attendance, and monthly family income against the scholarship rules.
+2. **Smart Pharmacy Inventory & Sales Management System:** processes medicine stock and sales, calculates revenue, and identifies medicines that need restocking.
 
-Both programs use console input and output. They are independent Python files and can be run separately.
+Both programs are separate, menu-free console applications. Run the file for the task you want to demonstrate.
 
-## Task 1 — Student Scholarship Eligibility System
+## Live Preview
 
-The program collects the student's name, academic marks, attendance percentage, and monthly family income. It validates the entered information before evaluating the scholarship requirements.
+▶ **[Open the interactive preview (`preview.html`)](preview.html)** shows the animated header and footer, both flowcharts, sample-run charts, and the ER diagram on one page.
 
-### Scholarship Eligibility Criteria
+> GitHub displays `.html` files as source code. To see the page rendered, open `preview.html` in any browser, or enable **GitHub Pages** (Settings → Pages → Deploy from a branch) and visit `https://<your-username>.github.io/python-conditions-loops-assessment/preview.html`.
 
-| Requirement | Eligibility Condition |
-|---|---|
+## Required Project Structure
+
+```text
+python-conditions-loops-assessment/
+├── student_scholarship_system.py
+├── pharmacy_inventory_system.py
+└── README.md
+```
+
+Optional presentation files (not required for submission): `preview.html` and the `assets/` folder with the animated SVGs.
+
+## Requirements
+
+- Python 3.8 or newer.
+- A terminal, command prompt, or Python IDE such as VS Code or IDLE.
+- No third-party libraries are required. Both programs use Python's built-in features.
+
+---
+
+# Task 1: Student Scholarship Eligibility System
+
+## Purpose
+
+The program collects a student's name, academic marks, attendance percentage, and monthly family income. It validates the entries, checks all three eligibility conditions, decides the scholarship category, and prints a complete evaluation report.
+
+## Scholarship Rules
+
+| Requirement | Condition |
+|---|---:|
 | Academic marks | At least 80% |
 | Attendance | At least 85% |
 | Monthly family income | Rs. 50,000 or less |
+| Full Scholarship | Eligible student with marks of 90% or above |
+| Partial Scholarship | Eligible student with marks from 80% to below 90% |
 
-When all three requirements are satisfied, the scholarship category is selected according to academic marks:
+A student must satisfy **all three eligibility requirements** to receive a scholarship. If one or more requirements are not met, the report lists every reason for ineligibility.
 
-| Academic Marks | Scholarship |
+## How the Program Works
+
+1. Displays the program title.
+2. Asks for the student's name.
+3. Checks that the name is not blank.
+4. Asks for academic marks and validates that the value is numeric and between 0 and 100.
+5. Asks for attendance and applies the same percentage validation.
+6. Asks for monthly family income and checks that it is a valid, non-negative number.
+7. Checks marks, attendance, and income separately using `if` statements.
+8. Adds each failed requirement to a `reasons` list, so the student can see all reasons rather than only the first one.
+9. If there are no failed requirements, uses `if` and `elif` to select Full or Partial Scholarship.
+10. Prints the student's details, eligibility status, scholarship result, and any reason for ineligibility.
+
+## Eligibility Decision Logic
+
+<p align="center"><img src="assets/scholarship-flow.svg" alt="Scholarship decision flowchart" width="100%"></p>
+
+- If marks are below 80%, the academic requirement is not met.
+- If attendance is below 85%, the attendance requirement is not met.
+- If monthly family income is above Rs. 50,000, the income requirement is not met.
+- If all requirements are met and marks are at least 90%, the result is **Full Scholarship**.
+- If all requirements are met and marks are from 80% to below 90%, the result is **Partial Scholarship**.
+
+The program checks each requirement independently. This means it can display more than one ineligibility reason when applicable.
+
+## Input Validation
+
+- Student name cannot be empty.
+- Marks must be numeric and between 0 and 100, inclusive.
+- Attendance must be numeric and between 0 and 100, inclusive.
+- Monthly family income must be numeric and cannot be negative.
+- `try/except` catches invalid numeric input and asks the user to enter it again.
+
+## Python Concepts Used
+
+- `input()` to collect user information.
+- `print()` to display prompts and the final report.
+- Variables with meaningful names.
+- `float()` for marks, attendance, and income.
+- `while` loops to repeat prompts until valid input is entered.
+- `try/except` and `ValueError` for input validation.
+- `if`, `elif`, and `else` for decision-making.
+- Comparison operators: `<`, `>=`, and `>`.
+- A list and `append()` to collect all ineligibility reasons.
+- `len()` to check whether any reasons were recorded.
+- `enumerate()` to number the reasons.
+- f-strings and numeric formatting such as `:.2f` and `:,.2f`.
+- A `main()` function and the `if __name__ == "__main__":` entry point.
+
+## Sample Execution: Eligible Student
+
+```text
+================================================
+       STUDENT SCHOLARSHIP ELIGIBILITY
+================================================
+Enter student name: Ayesha Khan
+Enter academic marks (0-100%): 92
+Enter attendance percentage (0-100%): 90
+Enter monthly family income (Rs.): 45000
+
+================================================
+           SCHOLARSHIP EVALUATION REPORT
+================================================
+Student Name       : Ayesha Khan
+Academic Marks     : 92.00%
+Attendance         : 90.00%
+Monthly Family Income: Rs. 45,000.00
+------------------------------------------------
+Eligibility Status : ELIGIBLE
+Scholarship Result : Full Scholarship
+
+Congratulations! All scholarship requirements are satisfied.
+================================================
+```
+
+## Sample Execution: Ineligible Student
+
+```text
+Enter student name: Ali
+Enter academic marks (0-100%): 75
+Enter attendance percentage (0-100%): 80
+Enter monthly family income (Rs.): 60000
+
+Eligibility Status : NOT ELIGIBLE
+Scholarship Result : Not Eligible
+
+Reason(s) for ineligibility:
+1. Academic marks are below the required 80%.
+2. Attendance is below the required 85%.
+3. Monthly family income is above Rs. 50,000.
+```
+
+---
+
+# Task 2: Smart Pharmacy Inventory & Sales Management System
+
+## Purpose
+
+The program asks how many different medicines the pharmacy wants to process. It then collects each medicine's name, available stock, unit price, and requested sales quantity. It checks stock availability, calculates successful sales, updates remaining stock, warns about low stock, and calculates total pharmacy revenue.
+
+## How the Program Works
+
+1. Displays the pharmacy program title.
+2. Asks how many different medicines will be processed.
+3. Validates that the medicine count is a whole number greater than zero.
+4. Initializes the revenue accumulator, restocking counter, and processed-medicine counter.
+5. Uses `for` with `range()` to repeat the medicine-entry process the required number of times.
+6. For each medicine, asks for its name, available stock, price per unit, and quantity to sell.
+7. Validates the medicine name, stock, price, and quantity.
+8. Checks whether the requested quantity is greater than available stock.
+9. If stock is insufficient, the sale is not completed, revenue for that medicine remains zero, and the available stock remains unchanged.
+10. If stock is sufficient, calculates `quantity sold × price per unit`, subtracts the sold quantity from stock, and adds the sales amount to total revenue.
+11. Checks whether remaining stock is below 10 units. If it is, displays a low-stock warning and increases the restocking counter.
+12. Stores each medicine's result and prints a final report after the loop finishes.
+
+## Processing Flow
+
+<p align="center"><img src="assets/pharmacy-flow.svg" alt="Pharmacy processing loop flowchart" width="100%"></p>
+
+## Important Calculations
+
+**Sales amount**
+
+```python
+sales_amount = quantity_sold * price_per_unit
+```
+
+**Remaining stock after a successful sale**
+
+```python
+remaining_stock = available_stock - quantity_sold
+```
+
+**Total pharmacy revenue**
+
+```python
+total_revenue += sales_amount
+```
+
+The `+=` operator is an accumulator update. It adds each successful medicine sale to the running revenue total.
+
+## Counters and Accumulators
+
+| Variable | Purpose |
 |---|---|
-| 90% or above | Full Scholarship |
-| 80% to below 90% | Partial Scholarship |
+| `processed_count` | Counts how many medicine entries have been processed. |
+| `restock_count` | Counts medicines whose remaining stock is below 10 units. |
+| `total_revenue` | Accumulates the sales amount from successful sales. |
 
-If one or more requirements are not satisfied, the program displays each applicable reason for ineligibility.
+A medicine is counted for restocking when its remaining stock is below 10 units. This check is made after the stock outcome is determined, including when a requested sale could not be completed.
 
-### Concepts Covered
+## Input Validation
 
-- `if`, `elif`, and `else` for conditional decision-making.
-- Comparison operators such as `<`, `<=`, `>=`, and `>`.
-- `while` loops for repeating input until valid information is entered.
-- `input()` and `print()` for console interaction.
-- `float()` for accepting percentage and income values.
-- `try/except` with `ValueError` for handling non-numeric input.
-- Lists and `append()` for collecting multiple ineligibility reasons.
-- Logical conditions for checking all scholarship requirements.
-- F-strings and number formatting for a readable evaluation report.
+- Medicine count must be a whole number greater than zero.
+- Medicine name cannot be empty.
+- Available stock must be a whole number and cannot be negative.
+- Price per unit must be a valid number greater than zero.
+- Quantity to sell must be a whole number and cannot be negative.
+- Invalid numeric input is caught with `try/except`, and the program asks again.
 
-### Program Logic and Validation
+## Python Concepts Used
 
-1. **Student name:** Rejects an empty name after removing surrounding spaces.
-2. **Academic marks:** Accepts numeric values from 0 to 100, inclusive.
-3. **Attendance:** Accepts numeric values from 0 to 100, inclusive.
-4. **Family income:** Accepts numeric values greater than or equal to zero.
-5. **Eligibility evaluation:** Checks all three requirements independently so that every failed requirement can be reported.
-6. **Scholarship category:** Awards a full scholarship for eligible marks of at least 90%; otherwise, eligible marks receive a partial scholarship.
-7. **Evaluation report:** Displays the student's information, scholarship result, and either confirmation of eligibility or all reasons for ineligibility.
-
-**Important eligibility detail:** A student receives a scholarship only when all three conditions are satisfied. A high marks percentage alone does not override insufficient attendance or family income above the allowed limit. An income of exactly Rs. 50,000 and attendance of exactly 85% meet their respective requirements.
-
-## Task 2 — Smart Pharmacy Inventory & Sales Management System
-
-The program asks how many different medicines need to be processed and uses a `for` loop with `range()` to process each medicine. For every medicine, it collects the name, available stock, price per unit, and requested sales quantity.
-
-The program completes a sale only when the requested quantity is available. It then calculates the sales amount and remaining stock. The total revenue and number of medicines requiring restocking are maintained throughout the processing loop.
-
-### Concepts Covered
-
-- `for` loop for processing multiple medicines.
-- `range()` for repeating the process a specified number of times.
-- `if` and `else` for checking stock availability.
-- Comparison operators such as `<`, `>=`, and `<=`.
+- `input()` and `print()`.
+- Variables and meaningful variable names.
+- `int()` and `float()` for numeric conversion.
 - `while` loops for input validation.
-- `int()` for stock quantities and medicine count.
-- `float()` for medicine prices and revenue calculations.
-- `try/except` with `ValueError` for invalid numeric input.
-- **Accumulator:** `total_pharmacy_revenue` adds the amount of every successful sale.
-- **Counter:** `medicines_requiring_restocking` counts medicines with fewer than 10 units remaining.
-- Arithmetic operators for sales and remaining-stock calculations.
-- F-strings and number formatting for the sales report.
+- `for` loop for processing multiple medicines.
+- `range(1, medicine_count + 1)` to repeat the required number of times.
+- `if` and `else` for stock availability decisions.
+- Conditions inside a loop for low-stock checks.
+- Arithmetic operators: `*` and `-`.
+- `+=` for accumulator and counter updates.
+- Lists and dictionaries to store medicine reports.
+- `append()` to save each medicine's result.
+- `enumerate()` to number the final report entries.
+- `try/except` and `ValueError` for input validation.
+- f-strings and currency formatting.
+- A `main()` function and the `if __name__ == "__main__":` entry point.
 
-### Program Logic and Validation
+## Sample Execution
 
-1. **Medicine count:** Requires a whole number greater than zero.
-2. **Medicine name:** Rejects an empty name after removing surrounding spaces.
-3. **Available stock:** Accepts a whole number greater than or equal to zero.
-4. **Unit price:** Accepts a numeric price greater than zero.
-5. **Quantity sold:** Accepts a whole number greater than or equal to zero.
-6. **Stock availability:** Compares the requested sales quantity with available stock before completing a sale.
-7. **Sales calculation:** Multiplies quantity sold by price per unit when stock is sufficient.
-8. **Remaining stock:** Subtracts the quantity sold from available stock after a successful sale.
-9. **Insufficient stock:** Reports the shortage, leaves stock unchanged, and does not add revenue for that medicine.
-10. **Low-stock warning:** Displays a warning when remaining stock is below 10 units.
-11. **Restocking counter:** Increases once for each processed medicine whose remaining stock is below 10 units.
-12. **Revenue accumulator:** Adds successful sales amounts to the pharmacy's total revenue.
-13. **Final report:** Displays the total number of medicines processed, total pharmacy revenue, and number of medicines requiring restocking.
+```text
+====================================================
+       SMART PHARMACY INVENTORY & SALES
+====================================================
+How many different medicines do you want to process? 2
 
-**Important stock detail:** The low-stock condition is checked against the remaining stock after a sale. If a sale cannot be completed because stock is insufficient, the original stock remains unchanged and is still checked for the low-stock warning. A medicine with exactly 10 units remaining does not trigger the warning because the requirement is strictly below 10.
+--- Medicine 1 of 2 ---
+Enter medicine name: Panadol
+Enter available stock: 30
+Enter price per unit (Rs.): 25
+Enter quantity to sell: 8
+Sale amount: Rs. 200.00
+Remaining stock: 22 unit(s)
 
-## How to Run
+--- Medicine 2 of 2 ---
+Enter medicine name: Vitamin C
+Enter available stock: 12
+Enter price per unit (Rs.): 50
+Enter quantity to sell: 5
+Sale amount: Rs. 250.00
+Remaining stock: 7 unit(s)
+LOW-STOCK WARNING: This medicine needs restocking.
 
-### Requirements
+====================================================
+             DAILY PHARMACY REPORT
+====================================================
 
-- Python 3 installed on your computer.
-- A terminal or command prompt.
-- No external Python packages are required.
+1. Panadol
+   Sale status       : Successful
+   Quantity sold     : 8
+   Sales amount      : Rs. 200.00
+   Remaining stock   : 22
+   Requires restock  : No
 
-### Run Task 1
+2. Vitamin C
+   Sale status       : Successful
+   Quantity sold     : 5
+   Sales amount      : Rs. 250.00
+   Remaining stock   : 7
+   Requires restock  : Yes
+
+----------------------------------------------------
+Total medicines processed : 2
+Total pharmacy revenue    : Rs. 450.00
+Medicines needing restock : 1
+====================================================
+```
+
+## Sample Run Analytics
+
+<p align="center"><img src="assets/sample-analytics.svg" alt="Sales and remaining stock charts for the sample run" width="100%"></p>
+
+## Additional Test Scenarios
+
+Test the programs with more than one kind of input before submitting:
+
+### Task 1
+
+1. Marks 95, attendance 90, income Rs. 40,000: eligible for Full Scholarship.
+2. Marks 85, attendance 86, income Rs. 50,000: eligible for Partial Scholarship.
+3. Marks 79, attendance 90, income Rs. 40,000: ineligible because of marks.
+4. Marks 90, attendance 84, income Rs. 40,000: ineligible because of attendance.
+5. Marks 90, attendance 90, income Rs. 50,001: ineligible because of income.
+6. Enter text instead of a number for marks or income: the program should show an error and ask again.
+7. Enter a percentage below 0 or above 100: the program should reject it.
+
+### Task 2
+
+1. Sell fewer units than the available stock: sale succeeds and stock decreases.
+2. Sell exactly all available units: sale succeeds and remaining stock becomes zero.
+3. Request more units than available: sale is rejected and revenue does not increase.
+4. Leave fewer than 10 units after a sale: low-stock warning appears.
+5. Enter zero stock or zero quantity: the program handles the values without a negative stock balance.
+6. Enter text where a number is required: the program shows an error and asks again.
+7. Process multiple medicines: the final revenue and restocking count should include all entries correctly.
+
+---
+
+# Data Model (ER Diagram)
+
+<p align="center"><img src="assets/er-diagram.svg" alt="Entity relationship diagram for both programs" width="100%"></p>
+
+The programs do not use a database. This diagram is a conceptual model of the information each program creates, so the relationships between inputs, results, and totals are easy to see.
+
+---
+
+# How to Run the Programs
+
+## Option 1: Run with a Terminal or Command Prompt
+
+1. Install Python 3.
+2. Download or clone the repository.
+3. Open a terminal in the project folder.
+4. Run Task 1:
 
 ```bash
 python student_scholarship_system.py
 ```
 
-### Run Task 2
+5. Run Task 2:
 
 ```bash
 python pharmacy_inventory_system.py
@@ -121,117 +354,68 @@ python pharmacy_inventory_system.py
 
 On some systems, use `python3` instead of `python`.
 
-## Example Run — Task 1
+## Option 2: Run with VS Code
+
+1. Open the project folder in Visual Studio Code.
+2. Make sure the Python extension is installed.
+3. Open `student_scholarship_system.py`.
+4. Select **Run Python File** or run it from the integrated terminal.
+5. Repeat the same steps for `pharmacy_inventory_system.py`.
+
+## GitHub Upload and Submission
+
+1. Sign in to GitHub and create a new repository named `python-conditions-loops-assessment`.
+2. Add these three files:
+   - `student_scholarship_system.py`
+   - `pharmacy_inventory_system.py`
+   - `README.md`
+3. Commit the files to the repository.
+4. Confirm that all three files appear on the repository's main page.
+5. Copy the repository URL.
+6. Submit the repository URL and the two Python source files plus README.md through the LMS, as requested by your instructor.
+
+## Suggested Git Commit Message
 
 ```text
-===== STUDENT SCHOLARSHIP ELIGIBILITY SYSTEM =====
-Enter student name: Ali
-Enter academic marks percentage (0-100): 92
-Enter attendance percentage (0-100): 90
-Enter monthly family income (Rs.): 40000
-
-===== SCHOLARSHIP EVALUATION REPORT =====
-Student Name: Ali
-Academic Marks: 92.00%
-Attendance: 90.00%
-Monthly Family Income: Rs. 40,000.00
-Scholarship Result: Full Scholarship
-Eligibility Status: All scholarship requirements are satisfied.
-=========================================
-```
-
-### Additional Task 1 Test Scenarios
-
-| Marks | Attendance | Monthly Income | Expected Result |
-|---:|---:|---:|---|
-| 95 | 90 | Rs. 40,000 | Full Scholarship |
-| 85 | 85 | Rs. 50,000 | Partial Scholarship |
-| 75 | 90 | Rs. 40,000 | Ineligible — marks |
-| 95 | 80 | Rs. 40,000 | Ineligible — attendance |
-| 95 | 90 | Rs. 60,000 | Ineligible — income |
-| 75 | 80 | Rs. 60,000 | Ineligible — all three reasons |
-
-## Example Run — Task 2
-
-```text
-===== SMART PHARMACY INVENTORY & SALES SYSTEM =====
-How many different medicines will be processed? 2
-
------ Medicine 1 of 2 -----
-Enter medicine name: Paracetamol
-Enter available stock (units): 50
-Enter price per unit (Rs.): 20
-Enter quantity to sell (units): 15
-
-Sale Status: Successful
-Medicine: Paracetamol
-Quantity Sold: 15 units
-Sales Amount: Rs. 300.00
-Remaining Stock: 35 units
-
------ Medicine 2 of 2 -----
-Enter medicine name: Cough Syrup
-Enter available stock (units): 12
-Enter price per unit (Rs.): 150
-Enter quantity to sell (units): 5
-
-Sale Status: Successful
-Medicine: Cough Syrup
-Quantity Sold: 5 units
-Sales Amount: Rs. 750.00
-Remaining Stock: 7 units
-Low-Stock Warning: This medicine requires restocking.
-
-===== DAILY PHARMACY SALES REPORT =====
-Total Medicines Processed: 2
-Total Pharmacy Revenue: Rs. 1,050.00
-Medicines Requiring Restocking: 1
-========================================
-```
-
-### Additional Task 2 Test Scenarios
-
-| Available Stock | Quantity Sold | Expected Result |
-|---:|---:|---|
-| 50 | 15 | Sale successful; 35 units remain |
-| 12 | 5 | Sale successful; 7 units remain; low-stock warning |
-| 8 | 12 | Sale not completed; 8 units remain; low-stock warning |
-| 20 | 20 | Sale successful; 0 units remain; low-stock warning |
-| 20 | 10 | Sale successful; 10 units remain; no low-stock warning |
-| 0 | 0 | Sale successful with zero revenue; low-stock warning |
-
-## UI/UX Notes
-
-Both applications are **console-based Python programs**, not graphical user interfaces. Their basic user-experience choices include:
-
-- Clear application titles and report headings.
-- Direct prompts that explain what information the user must enter.
-- Input validation with understandable error messages.
-- Currency labels (`Rs.`) and two decimal places for monetary values.
-- Percentage labels for academic marks and attendance.
-- Separate medicine-processing sections for easy tracking.
-- Clear sale-status messages and low-stock warnings.
-- Final reports that summarize the important results.
-
-These choices make both programs easier for a beginner to use and understand. A future extension could add file-based record storage, a graphical interface, or database integration, but those features are outside the scope of this assessment.
-
-## Practice Challenges
-
-1. Add a student category and introduce a scholarship rule for that category.
-2. Add a maximum scholarship amount or a fixed scholarship value.
-3. Display the exact percentage or amount by which an ineligible student missed a requirement.
-4. Store all medicine records in a list and display them in a final inventory table.
-5. Add a medicine search feature.
-6. Add a daily sales transaction count.
-7. Explain why an accumulator is used for total revenue and a counter is used for restocking medicines.
-8. Explain why `range(1, total_medicines + 1)` processes the required number of medicines.
-
-## Suggested Git Commit
-
-```text
-Add scholarship and pharmacy management assessment programs
+Add scholarship and pharmacy Python assessment programs
 ```
 
 ## Suggested Repository Description
 
-Beginner Python assessment demonstrating conditional statements, input validation, loops, stock checking, scholarship eligibility decisions, counters, accumulators, and console-based business applications.
+Beginner-friendly Python assessment featuring a scholarship eligibility checker using conditional statements and a pharmacy inventory and sales manager using loops, validation, counters, and accumulators.
+
+## Console UI/UX Notes
+
+- Both applications use a clear title and section headings.
+- Prompts explain what information the user should enter.
+- Invalid input produces a readable error and a chance to try again.
+- Currency amounts are displayed in Pakistani rupees (Rs.) with two decimal places.
+- The scholarship report lists all unmet eligibility requirements.
+- The pharmacy report summarizes each medicine and the overall daily totals.
+
+These are console-based programs, not graphical applications. Their focus is on the Python concepts required by the assessment.
+
+## Scope Notes
+
+- The scholarship program applies exactly the eligibility thresholds stated in the assignment.
+- The pharmacy program records the requested sales quantity only when enough stock is available. It does not partially complete an insufficient-stock request.
+- Revenue is calculated from successful sales only.
+- The low-stock threshold is strictly **below 10 units**, as stated in the assignment.
+- The programs do not save data to a database or file. Their information is available during the current run only.
+
+## Final Submission Checklist
+
+- [ ] `student_scholarship_system.py` is included.
+- [ ] `pharmacy_inventory_system.py` is included.
+- [ ] `README.md` is included and explains both programs.
+- [ ] Both programs run without syntax errors.
+- [ ] Valid and invalid input scenarios have been tested.
+- [ ] The GitHub repository contains the latest versions.
+- [ ] The repository URL has been copied for LMS submission.
+- [ ] All required files have been submitted through the LMS.
+
+---
+
+<div align="center">
+<img src="assets/footer.svg" alt="Built with Python" width="100%">
+</div>
