@@ -13,6 +13,19 @@ section{margin:56px 0}h2{font-size:28px;margin:0 0 6px}p{color:var(--mu);max-wid
 .rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.on{opacity:1;transform:none}
 pre{overflow-x:auto;background:#0b1020;color:#d1fae5;padding:16px;border-radius:12px;font-size:14px}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* ===== AUTHOR FOOTER (new) ===== */
+.au{max-width:900px;margin:0 auto;padding:32px 20px 8px;text-align:center;border-top:1px solid var(--bd)}
+.au-name{margin:0 0 16px;font-size:1.3rem;letter-spacing:.12em;color:var(--tx)}
+.au-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:16px}
+.au-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:999px;color:#fff;text-decoration:none;font-weight:600;font-size:.92rem;border:1px solid rgba(255,255,255,.12);transition:transform .15s ease}
+.au-btn:hover{transform:translateY(-2px)}
+.au-btn:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.au-gh{background:#161b22}
+.au-star{background:linear-gradient(135deg,#f59e0b,#ef4444)}
+.au-py{background:linear-gradient(135deg,#3776ab,#1e4f7a)}
+.au-note{margin:0 auto 8px}
+@media(prefers-reduced-motion:reduce){.au-btn{transition:none}.au-btn:hover{transform:none}}
 </style><noscript><style>.rv{opacity:1;transform:none}</style></noscript></head><body>
 <header><img src="assets/header.svg" alt="Python Conditions and Loops Assessment"></header>
 <nav><a href="#overview">Overview</a><a href="#task1">Scholarship flow</a><a href="#task2">Pharmacy flow</a><a href="#charts">Charts</a><a href="#er">ER diagram</a><a href="#run">Run it</a></nav>
@@ -22,6 +35,19 @@ pre{overflow-x:auto;background:#0b1020;color:#d1fae5;padding:16px;border-radius:
 <div class="card"><h3>Smart Pharmacy Inventory &amp; Sales</h3><p>Loops over medicines, checks stock, totals revenue, and flags items that need restocking.</p></div></div></section>
 <section id="task1" class="rv"><h2>Scholarship decision flow</h2><p>Full scholarship at 90% marks or more; partial from 80% to below 90%. All three requirements must pass.</p><div class="card"><img src="assets/scholarship-flow.svg" alt="Scholarship decision flowchart"></div></section><section id="task2" class="rv"><h2>Pharmacy processing loop</h2><p>One pass through the loop per medicine, with revenue and restock counters updated each time.</p><div class="card"><img src="assets/pharmacy-flow.svg" alt="Pharmacy loop flowchart"></div></section><section id="charts" class="rv"><h2>Sample run charts</h2><p>Revenue and remaining stock from the sample execution.</p><div class="card"><img src="assets/sample-analytics.svg" alt="Sample analytics charts"></div></section><section id="er" class="rv"><h2>Data model</h2><p>A conceptual ER diagram. The programs keep data in memory only.</p><div class="card"><img src="assets/er-diagram.svg" alt="ER diagram"></div></section><section id="run" class="rv"><h2>Run the programs</h2><p>Install Python 3.8 or newer, open a terminal in the project folder, and run either file.</p><pre><code>python student_scholarship_system.py
 python pharmacy_inventory_system.py</code></pre></section>
-</main><footer><img src="assets/footer.svg" alt="Built with Python"></footer>
+</main>
+
+<!-- ===== AUTHOR FOOTER (new) ===== -->
+<div class="au">
+  <h3 class="au-name">MAIDA JAVED</h3>
+  <div class="au-btns">
+    <a class="au-btn au-gh" href="https://github.com/MaidaJaved23" target="_blank" rel="noopener">GitHub: MaidaJaved23</a>
+    <a class="au-btn au-star" href="https://github.com/MaidaJaved23/python-functions-lists-assessment" target="_blank" rel="noopener">⭐ Give a Star</a>
+    <span class="au-btn au-py">🐍 Made with Python</span>
+  </div>
+  <p class="au-note">If you find this project useful, consider giving it a ⭐ on GitHub!</p>
+</div>
+
+<footer><img src="assets/footer.svg" alt="Built with Python"></footer>
 <p style="text-align:center;color:var(--mu)">Author: Maida Javed</p>
 <script>const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');o.unobserve(x.target)}}),{threshold:.12});document.querySelectorAll('.rv').forEach(e=>o.observe(e));</script></body></html>
