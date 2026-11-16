@@ -417,8 +417,23 @@ These are console-based programs, not graphical applications. Their focus is on 
 ---
 
 <div align="center">
+
 <img src="assets/footer.svg" alt="Built with Python. Author: Maida Javed" width="100%">
+
+<br>
+
+<a href="https://github.com/MaidaJaved23">
+  <img src="https://github.com/MaidaJaved23.png?size=120" width="100" alt="Maida Javed GitHub profile picture">
+</a>
 
 **Author: Maida Javed**
 
+<a href="https://github.com/MaidaJaved23">
+  <img src="https://img.shields.io/badge/GitHub-MaidaJaved23-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile">
+</a>
+<a href="https://github.com/MaidaJaved23/Python-Conditions-and-Loops">
+  <img src="https://img.shields.io/badge/Give%20a%20Star-F59E0B?style=for-the-badge&logo=github&logoColor=white" alt="Star this repository">
+</a>
+
 </div>
+
