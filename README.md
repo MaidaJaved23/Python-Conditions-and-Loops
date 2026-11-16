@@ -420,7 +420,35 @@ These are console-based programs, not graphical applications. Their focus is on 
 <img src="assets/footer.svg" alt="Built with Python" width="100%">
        <div align="center">
 
-<p><b>Author:</b> Maida Javed</p>
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=130&section=header" width="100%" alt="header wave" />
+
+## 👩‍💻 Author
+
+<img src="https://avatars.githubusercontent.com/MaidaJaved23?s=140" width="110" alt="Maida Javed" />
+
+<br><br>
+
+<img src="https://img.shields.io/badge/DEVELOPED%20BY-MAIDA%20JAVED-8B5CF6?style=for-the-badge&labelColor=1E1B4B" alt="Developed by Maida Javed" />
+
+<br><br>
+
+<a href="https://github.com/MaidaJaved23">
+  <img src="https://img.shields.io/badge/GitHub-MaidaJaved23-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile" />
+</a>
+<a href="https://github.com/MaidaJaved23/python-functions-lists-assessment">
+  <img src="https://img.shields.io/badge/Give%20a%20Star-F59E0B?style=for-the-badge&logo=github&logoColor=white" alt="Star this repo" />
+</a>
+<img src="https://img.shields.io/badge/Made%20with-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Made with Python" />
+
+<br><br>
+
+If you find this project useful, consider giving it a ⭐ on GitHub!
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,20,12&height=130&section=footer&text=Built%20with%20Python.%20Focused%20on%20Learning.%20Inspired%20by%20Real-World%20Problems.&fontSize=15&fontColor=ffffff&fontAlignY=68" width="100%" alt="footer wave" />
+
+</div>
 
 </div>
 </div>
