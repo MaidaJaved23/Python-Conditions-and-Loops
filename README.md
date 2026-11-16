@@ -4,7 +4,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white) ![Dependencies](https://img.shields.io/badge/dependencies-none-22c55e) ![Type](https://img.shields.io/badge/app-console-6366f1)
 
-**[▶ Live Preview](preview.html)** · [Task 1](#task-1-student-scholarship-eligibility-system) · [Task 2](#task-2-smart-pharmacy-inventory--sales-management-system) · [ER Diagram](#data-model-er-diagram) · [How to Run](#how-to-run-the-programs)
+**[▶ Live Preview](https://maidajaved23.github.io/Python-Conditions-and-Loops/preview.html)** · [Task 1](#task-1-student-scholarship-eligibility-system) · [Task 2](#task-2-smart-pharmacy-inventory--sales-management-system) · [ER Diagram](#data-model-er-diagram) · [How to Run](#how-to-run-the-programs)
 
 </div>
 
@@ -25,9 +25,9 @@ Both programs are separate, menu-free console applications. Run the file for the
 
 ## Live Preview
 
-▶ **[Open the interactive preview (`preview.html`)](preview.html)** shows the animated header and footer, both flowcharts, sample-run charts, and the ER diagram on one page.
+▶ **[Open the interactive preview](https://maidajaved23.github.io/Python-Conditions-and-Loops/preview.html)** shows the animated header and footer, both flowcharts, sample-run charts, and the ER diagram on one page.
 
-> GitHub displays `.html` files as source code. To see the page rendered, open `preview.html` in any browser, or enable **GitHub Pages** (Settings → Pages → Deploy from a branch) and visit `https://<your-username>.github.io/python-conditions-loops-assessment/preview.html`.
+> The preview opens through GitHub Pages. If the link shows a 404 page, wait 1 to 2 minutes after enabling it (Settings → Pages → Deploy from a branch → `main` → `/ (root)` → Save). You can also open `preview.html` from the downloaded project folder in any browser.
 
 ## Required Project Structure
 
@@ -417,38 +417,8 @@ These are console-based programs, not graphical applications. Their focus is on 
 ---
 
 <div align="center">
-<img src="assets/footer.svg" alt="Built with Python" width="100%">
-       <div align="center">
+<img src="assets/footer.svg" alt="Built with Python. Author: Maida Javed" width="100%">
 
-<div align="center">
+**Author: Maida Javed**
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=130&section=header" width="100%" alt="header wave" />
-
-## 👩‍💻 Author
-
-<img src="https://avatars.githubusercontent.com/MaidaJaved23?s=140" width="110" alt="Maida Javed" />
-
-<br><br>
-
-<img src="https://img.shields.io/badge/DEVELOPED%20BY-MAIDA%20JAVED-8B5CF6?style=for-the-badge&labelColor=1E1B4B" alt="Developed by Maida Javed" />
-
-<br><br>
-
-<a href="https://github.com/MaidaJaved23">
-  <img src="https://img.shields.io/badge/GitHub-MaidaJaved23-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile" />
-</a>
-<a href="https://github.com/MaidaJaved23/python-functions-lists-assessment">
-  <img src="https://img.shields.io/badge/Give%20a%20Star-F59E0B?style=for-the-badge&logo=github&logoColor=white" alt="Star this repo" />
-</a>
-<img src="https://img.shields.io/badge/Made%20with-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Made with Python" />
-
-<br><br>
-
-If you find this project useful, consider giving it a ⭐ on GitHub!
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,20,12&height=130&section=footer&text=Built%20with%20Python.%20Focused%20on%20Learning.%20Inspired%20by%20Real-World%20Problems.&fontSize=15&fontColor=ffffff&fontAlignY=68" width="100%" alt="footer wave" />
-
-</div>
-
-</div>
 </div>
