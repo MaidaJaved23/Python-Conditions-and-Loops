@@ -4,8 +4,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white) ![Dependencies](https://img.shields.io/badge/dependencies-none-22c55e) ![Type](https://img.shields.io/badge/app-console-6366f1)
 
-**[▶ Live Preview](https://maidajaved23.github.io/Python-Conditions-and-Loops/preview.html)** · [Task 1](#task-1-student-scholarship-eligibility-system) · [Task 2](#task-2-smart-pharmacy-inventory--sales-management-system) · [ER Diagram](#data-model-er-diagram) · [How to Run](#how-to-run-the-programs)
-
+**[▶ Live Preview](https://maidajaved23.github.io/Python-Conditions-and-Loops/preview.html)**
 </div>
 
 A beginner-friendly Python console project containing two separate applications. The first uses conditional statements to evaluate student scholarship eligibility. The second uses a `for` loop to process pharmacy inventory and calculate sales revenue.
@@ -425,13 +424,7 @@ Author: [Maida Javed]
 
 <br>
 
-
-<a href="https://github.com/MaidaJaved23">
-  <img src="https://img.shields.io/badge/GitHub-MaidaJaved23-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile">
-</a>
-<a href="https://github.com/MaidaJaved23/Python-Conditions-and-Loops">
-  <img src="https://img.shields.io/badge/Give%20a%20Star-F59E0B?style=for-the-badge&logo=github&logoColor=white" alt="Star this repository">
-</a>
+<a href="https://github.com/MaidaJaved23"><img src="https://img.shields.io/badge/GitHub-MaidaJaved23-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile"></a> <a href="https://github.com/MaidaJaved23/Python-Conditions-and-Loops"><img src="https://img.shields.io/badge/%E2%AD%90%20Give%20me%20a%20Star-F59E0B?style=for-the-badge&logo=github&logoColor=white" alt="Give me a star"></a>
 
 </div>
 
