@@ -81,7 +81,7 @@ A student must satisfy **all three eligibility requirements** to receive a schol
 
 ## Eligibility Decision Logic
 
-<p align="center"><img src="assets/scholarship-flow.svg" alt="Scholarship decision flowchart" width="100%"></p>
+<p align="center"><img src="assets/scholarship-flow.svg" alt="Scholarship decision flowchart" width="100%" alt="PSEB DEPLOY: Python, Django and AI Bootcamp. Instructor Waleed Shehbaz" width="100%"></p>
 
 - If marks are below 80%, the academic requirement is not met.
 - If attendance is below 85%, the attendance requirement is not met.
@@ -418,7 +418,10 @@ These are console-based programs, not graphical applications. Their focus is on 
 
 <div align="center">
 
-<img src="assets/footer.svg" alt="Built with Python. Author: Maida Javed" width="100%">
+<img src="assets/footer.svg" alt="PSEB DEPLOY: Python, Django and AI Bootcamp. Instructor Waleed Shehbaz" width="100%">
+
+**PSEB DEPLOY: Python, Django & AI Bootcamp**  
+Author: [Maida Javed]
 
 <br>
 
