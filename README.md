@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="assets/header.svg" alt="Python Conditions and Loops Assessment" width="100%">
+<img src="assets/header.svg" alt="Python Conditions and Loops" width="100%">
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white) ![Dependencies](https://img.shields.io/badge/dependencies-none-22c55e) ![Type](https://img.shields.io/badge/app-console-6366f1) ![Bootcamp](https://img.shields.io/badge/PSEB-Python%20Django%20Bootcamp-ec4899)
 
-**[▶ Live Preview](https://maidajaved23.github.io/Python-Conditions-and-Loops/preview.html)** · [Local preview](preview.html) · [Task 1](#task-1-student-scholarship-eligibility-system) · [Task 2](#task-2-smart-pharmacy-inventory--sales-management-system) · [ER Diagram](#data-model-er-diagram) · [How to Run](#how-to-run-the-programs)
+**[▶ Live Preview](https://maidajaved23.github.io/Python-Conditions-and-Loops/preview.html)** · [Task 1](#task-1-student-scholarship-eligibility-system) · [Task 2](#task-2-smart-pharmacy-inventory--sales-management-system) · [ER Diagram](#data-model-er-diagram) · [How to Run](#how-to-run-the-programs)
 
 </div>
 
