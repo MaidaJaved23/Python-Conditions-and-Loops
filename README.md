@@ -2,10 +2,56 @@
 
 <img src="assets/header.svg" alt="Python Conditions and Loops Assessment" width="100%">
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white) ![Dependencies](https://img.shields.io/badge/dependencies-none-22c55e) ![Type](https://img.shields.io/badge/app-console-6366f1)
+![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white) ![Dependencies](https://img.shields.io/badge/dependencies-none-22c55e) ![Type](https://img.shields.io/badge/app-console-6366f1) ![Bootcamp](https://img.shields.io/badge/PSEB-Python%20Django%20Bootcamp-ec4899)
 
-**[▶ Live Preview](https://maidajaved23.github.io/Python-Conditions-and-Loops/preview.html)**
+**[▶ Live Preview](preview.html)** · [Task 1](#task-1-student-scholarship-eligibility-system) · [Task 2](#task-2-smart-pharmacy-inventory--sales-management-system) · [ER Diagram](#data-model-er-diagram) · [How to Run](#how-to-run-the-programs)
+
 </div>
+
+## Contents
+
+- [Repository Name](#repository-name)
+- [Project Overview](#project-overview)
+- [Live Preview](#live-preview)
+- [Required Project Structure](#required-project-structure)
+- [Requirements](#requirements)
+- [Task 1: Student Scholarship Eligibility System](#task-1-student-scholarship-eligibility-system)
+  - [Purpose](#purpose)
+  - [Scholarship Rules](#scholarship-rules)
+  - [How the Program Works](#how-the-program-works)
+  - [Eligibility Decision Logic](#eligibility-decision-logic)
+  - [Input Validation](#input-validation)
+  - [Python Concepts Used](#python-concepts-used)
+  - [Sample Execution: Eligible Student](#sample-execution-eligible-student)
+  - [Sample Execution: Ineligible Student](#sample-execution-ineligible-student)
+- [Task 2: Smart Pharmacy Inventory & Sales Management System](#task-2-smart-pharmacy-inventory--sales-management-system)
+  - [Purpose](#purpose-1)
+  - [How the Program Works](#how-the-program-works-1)
+  - [Processing Flow](#processing-flow)
+  - [Important Calculations](#important-calculations)
+  - [Counters and Accumulators](#counters-and-accumulators)
+  - [Input Validation](#input-validation-1)
+  - [Python Concepts Used](#python-concepts-used-1)
+  - [Sample Execution](#sample-execution)
+  - [Sample Run Analytics](#sample-run-analytics)
+- [Additional Test Scenarios](#additional-test-scenarios)
+  - [Task 1 scenarios](#task-1)
+  - [Task 2 scenarios](#task-2)
+- [Data Model (ER Diagram)](#data-model-er-diagram)
+  - [Combined ER Overview](#combined-er-overview)
+  - [Scholarship Data Model](#scholarship-data-model)
+  - [Pharmacy Data Model](#pharmacy-data-model)
+- [Python Concepts at a Glance](#python-concepts-at-a-glance)
+- [How to Run the Programs](#how-to-run-the-programs)
+  - [Option 1: Run with a Terminal or Command Prompt](#option-1-run-with-a-terminal-or-command-prompt)
+  - [Option 2: Run with VS Code](#option-2-run-with-vs-code)
+  - [GitHub Upload and Submission](#github-upload-and-submission)
+  - [Suggested Git Commit Message](#suggested-git-commit-message)
+  - [Suggested Repository Description](#suggested-repository-description)
+  - [Console UI/UX Notes](#console-uiux-notes)
+  - [Scope Notes](#scope-notes)
+  - [Final Submission Checklist](#final-submission-checklist)
+- [Credits and Links](#credits-and-links)
 
 A beginner-friendly Python console project containing two separate applications. The first uses conditional statements to evaluate student scholarship eligibility. The second uses a `for` loop to process pharmacy inventory and calculate sales revenue.
 
@@ -24,9 +70,9 @@ Both programs are separate, menu-free console applications. Run the file for the
 
 ## Live Preview
 
-▶ **[Open the interactive preview](https://maidajaved23.github.io/Python-Conditions-and-Loops/preview.html)** shows the animated header and footer, both flowcharts, sample-run charts, and the ER diagram on one page.
+▶ **[Open the interactive preview (`preview.html`)](preview.html)** shows the animated header and footer, both flowcharts, the threshold gauges, test-scenario matrix, sample-run charts, all three ER diagrams, and the concepts chart on one page.
 
-> The preview opens through GitHub Pages. If the link shows a 404 page, wait 1 to 2 minutes after enabling it (Settings → Pages → Deploy from a branch → `main` → `/ (root)` → Save). You can also open `preview.html` from the downloaded project folder in any browser.
+> GitHub displays `.html` files as source code. To see the page rendered, open `preview.html` in any browser, or enable **GitHub Pages** (Settings → Pages → Deploy from a branch) and visit `https://<your-username>.github.io/python-conditions-loops-assessment/preview.html`.
 
 ## Required Project Structure
 
@@ -38,6 +84,16 @@ python-conditions-loops-assessment/
 ```
 
 Optional presentation files (not required for submission): `preview.html` and the `assets/` folder with the animated SVGs.
+
+```text
+assets/
+├── header.svg                 footer.svg
+├── btn-author.svg             btn-github.svg            btn-star.svg
+├── scholarship-flow.svg       scholarship-thresholds.svg
+├── pharmacy-flow.svg          pharmacy-insights.svg     sample-analytics.svg
+├── scenario-matrix.svg        python-concepts.svg
+└── er-diagram.svg             er-scholarship.svg        er-pharmacy.svg
+```
 
 ## Requirements
 
@@ -65,6 +121,8 @@ The program collects a student's name, academic marks, attendance percentage, an
 
 A student must satisfy **all three eligibility requirements** to receive a scholarship. If one or more requirements are not met, the report lists every reason for ineligibility.
 
+<p align="center"><img src="assets/scholarship-thresholds.svg" alt="Eligibility threshold gauges for marks, attendance and income" width="100%"></p>
+
 ## How the Program Works
 
 1. Displays the program title.
@@ -80,7 +138,7 @@ A student must satisfy **all three eligibility requirements** to receive a schol
 
 ## Eligibility Decision Logic
 
-<p align="center"><img src="assets/scholarship-flow.svg" alt="Scholarship decision flowchart" width="100%" alt="PSEB DEPLOY: Python, Django and AI Bootcamp. Instructor Waleed Shehbaz" width="100%"></p>
+<p align="center"><img src="assets/scholarship-flow.svg" alt="Scholarship decision flowchart" width="100%"></p>
 
 - If marks are below 80%, the academic requirement is not met.
 - If attendance is below 85%, the attendance requirement is not met.
@@ -298,11 +356,15 @@ Medicines needing restock : 1
 
 <p align="center"><img src="assets/sample-analytics.svg" alt="Sales and remaining stock charts for the sample run" width="100%"></p>
 
-## Additional Test Scenarios
+<p align="center"><img src="assets/pharmacy-insights.svg" alt="Revenue share donut chart and the calculations behind the sample report" width="100%"></p>
+
+# Additional Test Scenarios
 
 Test the programs with more than one kind of input before submitting:
 
 ### Task 1
+
+<p align="center"><img src="assets/scenario-matrix.svg" alt="Matrix of the Task 1 test scenarios with pass or fail results" width="100%"></p>
 
 1. Marks 95, attendance 90, income Rs. 40,000: eligible for Full Scholarship.
 2. Marks 85, attendance 86, income Rs. 50,000: eligible for Partial Scholarship.
@@ -326,9 +388,27 @@ Test the programs with more than one kind of input before submitting:
 
 # Data Model (ER Diagram)
 
+The programs do not use a database. These diagrams are conceptual models of the information each program creates, so the relationships between inputs, results, and totals are easy to see.
+
+## Combined ER Overview
+
 <p align="center"><img src="assets/er-diagram.svg" alt="Entity relationship diagram for both programs" width="100%"></p>
 
-The programs do not use a database. This diagram is a conceptual model of the information each program creates, so the relationships between inputs, results, and totals are easy to see.
+## Scholarship Data Model
+
+<p align="center"><img src="assets/er-scholarship.svg" alt="Scholarship ER diagram with attributes" width="100%"></p>
+
+## Pharmacy Data Model
+
+<p align="center"><img src="assets/er-pharmacy.svg" alt="Pharmacy ER diagram with attributes" width="100%"></p>
+
+---
+
+# Python Concepts at a Glance
+
+Both tasks share a common core of ten concepts. Task 1 adds three decision-focused concepts, and Task 2 adds five loop and accumulator concepts.
+
+<p align="center"><img src="assets/python-concepts.svg" alt="Chart of shared and task-specific Python concepts" width="100%"></p>
 
 ---
 
@@ -415,16 +495,16 @@ These are console-based programs, not graphical applications. Their focus is on 
 
 ---
 
+# Credits and Links
+
 <div align="center">
 
-<img src="assets/footer.svg" alt="PSEB DEPLOY: Python, Django and AI Bootcamp. Instructor Waleed Shehbaz" width="100%">
+<img src="assets/footer.svg" alt="PSEB Python Django Bootcamp. Instructor: Muhammad Waleed Shehbaz. Author: Maida Javed." width="100%">
 
-**PSEB DEPLOY: Python, Django & AI Bootcamp**  
-Author: [Maida Javed]
-
-<br>
-
-<a href="https://github.com/MaidaJaved23"><img src="https://img.shields.io/badge/GitHub-MaidaJaved23-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile"></a> <a href="https://github.com/MaidaJaved23/Python-Conditions-and-Loops"><img src="https://img.shields.io/badge/%E2%AD%90%20Give%20me%20a%20Star-F59E0B?style=for-the-badge&logo=github&logoColor=white" alt="Give me a star"></a>
+<a href="https://github.com/YOUR-USERNAME"><img src="assets/btn-author.svg" alt="Author: Maida Javed" height="64"></a>
+&nbsp;
+<a href="https://github.com/YOUR-USERNAME/python-conditions-loops-assessment"><img src="assets/btn-github.svg" alt="GitHub repository" height="64"></a>
+&nbsp;
+<a href="https://github.com/YOUR-USERNAME/python-conditions-loops-assessment"><img src="assets/btn-star.svg" alt="Give me a star on GitHub" height="64"></a>
 
 </div>
-
