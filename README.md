@@ -4,7 +4,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white) ![Dependencies](https://img.shields.io/badge/dependencies-none-22c55e) ![Type](https://img.shields.io/badge/app-console-6366f1) ![Bootcamp](https://img.shields.io/badge/PSEB-Python%20Django%20Bootcamp-ec4899)
 
-**[▶ Live Preview](https://maidajaved23.github.io/Python-Conditions-and-Loops/)** · [Local preview](preview.html) · [Task 1](#task-1-student-scholarship-eligibility-system) · [Task 2](#task-2-smart-pharmacy-inventory--sales-management-system) · [ER Diagram](#data-model-er-diagram) · [How to Run](#how-to-run-the-programs)
+**[▶ Live Preview](https://maidajaved23.github.io/Python-Conditions-and-Loops/preview.html)** · [Local preview](preview.html) · [Task 1](#task-1-student-scholarship-eligibility-system) · [Task 2](#task-2-smart-pharmacy-inventory--sales-management-system) · [ER Diagram](#data-model-er-diagram) · [How to Run](#how-to-run-the-programs)
 
 </div>
 
@@ -70,9 +70,9 @@ Both programs are separate, menu-free console applications. Run the file for the
 
 ## Live Preview
 
-▶ **[Open the live preview website](https://maidajaved23.github.io/Python-Conditions-and-Loops/)** (hosted from `preview.html` with GitHub Pages), or open the local file **[`preview.html`](preview.html)** shows the animated header and footer, both flowcharts, the threshold gauges, test-scenario matrix, sample-run charts, all three ER diagrams, and the concepts chart on one page.
+▶ **[Open the live preview website](https://maidajaved23.github.io/Python-Conditions-and-Loops/preview.html)** (hosted from `preview.html` with GitHub Pages). The page shows the animated header and footer, both flowcharts, the threshold gauges, test-scenario matrix, sample-run charts, all three ER diagrams, and the concepts chart. You can also open the local file [`preview.html`](preview.html) in any browser.
 
-> GitHub displays `.html` files as source code, so use the live link above: <https://maidajaved23.github.io/Python-Conditions-and-Loops/>. To see the page rendered offline, open `preview.html` in any browser.
+> GitHub displays `.html` files as source code, so use the live link above: <https://maidajaved23.github.io/Python-Conditions-and-Loops/preview.html>. To see the page rendered offline, download the project and open `preview.html` in any browser.
 
 ## Required Project Structure
 
