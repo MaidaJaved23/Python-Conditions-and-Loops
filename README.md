@@ -4,7 +4,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white) ![Dependencies](https://img.shields.io/badge/dependencies-none-22c55e) ![Type](https://img.shields.io/badge/app-console-6366f1) ![Bootcamp](https://img.shields.io/badge/PSEB-Python%20Django%20Bootcamp-ec4899)
 
-**[▶ Live Preview](preview.html)** · [Task 1](#task-1-student-scholarship-eligibility-system) · [Task 2](#task-2-smart-pharmacy-inventory--sales-management-system) · [ER Diagram](#data-model-er-diagram) · [How to Run](#how-to-run-the-programs)
+**[▶ Live Preview](https://maidajaved23.github.io/Python-Conditions-and-Loops/)** · [Local preview](preview.html) · [Task 1](#task-1-student-scholarship-eligibility-system) · [Task 2](#task-2-smart-pharmacy-inventory--sales-management-system) · [ER Diagram](#data-model-er-diagram) · [How to Run](#how-to-run-the-programs)
 
 </div>
 
@@ -70,9 +70,9 @@ Both programs are separate, menu-free console applications. Run the file for the
 
 ## Live Preview
 
-▶ **[Open the interactive preview (`preview.html`)](preview.html)** shows the animated header and footer, both flowcharts, the threshold gauges, test-scenario matrix, sample-run charts, all three ER diagrams, and the concepts chart on one page.
+▶ **[Open the live preview website](https://maidajaved23.github.io/Python-Conditions-and-Loops/)** (hosted from `preview.html` with GitHub Pages), or open the local file **[`preview.html`](preview.html)** shows the animated header and footer, both flowcharts, the threshold gauges, test-scenario matrix, sample-run charts, all three ER diagrams, and the concepts chart on one page.
 
-> GitHub displays `.html` files as source code. To see the page rendered, open `preview.html` in any browser, or enable **GitHub Pages** (Settings → Pages → Deploy from a branch) and visit `https://<your-username>.github.io/python-conditions-loops-assessment/preview.html`.
+> GitHub displays `.html` files as source code, so use the live link above: <https://maidajaved23.github.io/Python-Conditions-and-Loops/>. To see the page rendered offline, open `preview.html` in any browser.
 
 ## Required Project Structure
 
@@ -501,10 +501,10 @@ These are console-based programs, not graphical applications. Their focus is on 
 
 <img src="assets/footer.svg" alt="PSEB Python Django Bootcamp. Instructor: Muhammad Waleed Shehbaz. Author: Maida Javed." width="100%">
 
-<a href="https://github.com/YOUR-USERNAME"><img src="assets/btn-author.svg" alt="Author: Maida Javed" height="64"></a>
+<a href="https://github.com/maidajaved23"><img src="assets/btn-author.svg" alt="Author: Maida Javed" height="64"></a>
 &nbsp;
-<a href="https://github.com/YOUR-USERNAME/python-conditions-loops-assessment"><img src="assets/btn-github.svg" alt="GitHub repository" height="64"></a>
+<a href="https://github.com/maidajaved23/Python-Conditions-and-Loops"><img src="assets/btn-github.svg" alt="GitHub repository" height="64"></a>
 &nbsp;
-<a href="https://github.com/YOUR-USERNAME/python-conditions-loops-assessment"><img src="assets/btn-star.svg" alt="Give me a star on GitHub" height="64"></a>
+<a href="https://github.com/maidajaved23/Python-Conditions-and-Loops"><img src="assets/btn-star.svg" alt="Give me a star on GitHub" height="64"></a>
 
 </div>
